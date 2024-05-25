@@ -1,0 +1,177 @@
+{
+  "quality_eval": [
+    {
+      "is_enabled": true,
+      "min_limit": 3,
+      "max_limit": null,
+      "out": "Comment Check.You used {} comments, should be between {} < {}",
+      "indicator": "USED_COMMENT"
+    },
+    {
+      "is_enabled": true,
+      "min_limit": 1,
+      "max_limit": null,
+      "out": "WebDriverWait Check.You used {} waits, should be between {} < {}",
+      "indicator": "USED_WAIT"
+    },
+    {
+      "is_enabled": true,
+      "min_limit": null,
+      "max_limit": 20,
+      "out": "Sleep statement Check.You used {} sleep statements, should be between {} < {}",
+      "indicator": "USED_THREAD_SLEEP"
+    },
+    {
+      "is_enabled": true,
+      "min_limit": 3,
+      "max_limit": null,
+      "out": "System Out Printline or Logging Check.You used {} System out Printline statements, should be between {} < {}",
+      "indicator": "USED_SOPL"
+    }
+  ],
+  "instruction_set": [
+    {
+      "is_enabled": true,
+      "test_case_fe": "Test Case 1 - Look for high rated Washing Machines",
+      "test_case_hint": "Check TestNG Test `testCase01`",
+      "testng_test_name": "testCase01",
+      "chrome_log_assessment": [
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "Navigate"
+            },
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "flipkart"
+            }
+          ],
+          "join": "AND",
+          "success_out": "Navigated to the flipkart",
+          "hint": "Ensure that you navigated to flipkart"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "TypeElement"
+            },
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "Washing Machine"
+            }
+          ],
+          "join": "AND",
+          "success_out": "Typed Washing Machine into search box",
+          "hint": "Ensure that you entered the text 'Washing Machine' into search input"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "GetElementText"
+            },
+            {
+              "object_notation": "RESPONSE",
+              "operator": "contains",
+              "expected_value": "4."
+            }
+          ],
+          "join": "AND",
+          "success_out": "Got 4 star and lower rated products",
+          "hint": "Ensure that you fetch 4 star and lower rated product"
+        }
+      ]
+    },
+    {
+      "is_enabled": true,
+      "test_case_fe": "Test Case 2 - Look for phones with certain discount",
+      "test_case_hint": "Check TestNG Test `testCase02`",
+      "testng_test_name": "testCase02",
+      "chrome_log_assessment": [
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "TypeElement"
+            },
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "iPhone"
+            }
+          ],
+          "join": "AND",
+          "success_out": "Typed iPhone into search box",
+          "hint": "Ensure that you entered the text 'iPhone' into search input"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "GetElementText"
+            },
+            {
+              "object_notation": "RESPONSE",
+              "operator": "contains",
+              "expected_value": "% off"
+            }
+          ],
+          "join": "AND",
+          "success_out": "Got discounts for the phones",
+          "hint": "Ensure that you fetch discounts of the products"
+        }
+      ]
+    },
+    {
+      "is_enabled": true,
+      "test_case_fe": "Test Case 3 - Look for coffee mugs with certain discount",
+      "test_case_hint": "Check TestNG Test `testCase03`",
+      "testng_test_name": "testCase03",
+      "chrome_log_assessment": [
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "TypeElement"
+            },
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "Coffee Mug"
+            }
+          ],
+          "join": "AND",
+          "success_out": "Typed Coffee Mug into search box",
+          "hint": "Ensure that you entered the text 'Coffee Mug' into search input"
+        },
+        {
+          "validations": [
+            {
+              "object_notation": "COMMAND",
+              "operator": "contains",
+              "expected_value": "GetElementText"
+            },
+            {
+              "object_notation": "RESPONSE",
+              "operator": "contains",
+              "expected_value": ""
+            }
+          ],
+          "join": "AND",
+          "success_out": "Got review cound for the coffee mugs",
+          "hint": "Ensure that you fetch review count of the mugs"
+        }
+      ]
+    }
+  ]
+}
