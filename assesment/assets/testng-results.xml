@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-16T11:56:11Z" name="Test Suite for Buildout" finished-at="2024-09-16T11:57:14Z" duration-ms="62700">
+    <groups>
+    </groups>
+    <test started-at="2024-09-16T11:56:11Z" name="Test Cases for Buildout" finished-at="2024-09-16T11:57:14Z" duration-ms="62700">
+      <class name="demo.TestCases">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:demo.TestCases@77a98a6a]" started-at="2024-09-16T17:26:11Z" name="startBrowser" finished-at="2024-09-16T17:26:14Z" duration-ms="3318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method signature="testCase01()[pri:0, instance:demo.TestCases@77a98a6a]" started-at="2024-09-16T17:26:14Z" name="testCase01" finished-at="2024-09-16T17:26:23Z" duration-ms="8962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase01 -->
+        <test-method signature="testCase02()[pri:0, instance:demo.TestCases@77a98a6a]" started-at="2024-09-16T17:26:23Z" name="testCase02" finished-at="2024-09-16T17:27:01Z" duration-ms="37702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase02 -->
+        <test-method signature="testCase03()[pri:0, instance:demo.TestCases@77a98a6a]" started-at="2024-09-16T17:27:01Z" name="testCase03" finished-at="2024-09-16T17:27:13Z" duration-ms="12219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase03 -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:demo.TestCases@77a98a6a]" started-at="2024-09-16T17:27:13Z" name="endTest" finished-at="2024-09-16T17:27:14Z" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- demo.TestCases -->
+    </test> <!-- Test Cases for Buildout -->
+  </suite> <!-- Test Suite for Buildout -->
+</testng-results>
